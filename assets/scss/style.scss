@@ -1,0 +1,14 @@
+/* scss/styles.scss */
+$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-top: 50px;
+  color: $primary-color;
+}
+
+h1 {
+  color: darken($primary-color, 20%);
+}

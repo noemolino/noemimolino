@@ -1,0 +1,14 @@
+/* scss/styles.scss */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-top: 50px;
+  color: #3498db;
+}
+
+h1 {
+  color: #196090;
+}
+
+/*# sourceMappingURL=style.css.map */
