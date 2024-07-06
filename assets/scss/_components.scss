@@ -1,0 +1,57 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+    @include flex-center;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: $base-spacing;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: $primary-color;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0;
+
+    li {
+        margin-top: $base-spacing;
+        margin-left: 0;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    &.active {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+        border-radius: 2px;
+    }
+    
+}
+
+

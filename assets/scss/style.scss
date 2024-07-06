@@ -1,15 +1,6 @@
-/* scss/styles.scss */
-$primary-color: #000000;
-$secondary-color: #2f8bf5;
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
-  text-align: center;
-  margin-top: 50px;
-  color: $primary-color;
-}
-
-h1 {
-  color: darken($primary-color, 20%);
-}
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components';
+@import 'responsive';

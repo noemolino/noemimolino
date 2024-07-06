@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+@media (min-width: 769px) {
+    .container {
+        justify-content: space-around;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        text-align: left;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+
+        li {
+            margin-left: $base-spacing;
+            margin-top: 0;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
