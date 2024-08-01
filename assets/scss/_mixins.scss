@@ -1,15 +1,21 @@
-@mixin flex-center {
+@mixin flex-center($direction: row, $justify-content: center) {
     display: flex;
-    // justify-content: center;
     align-items: center;
+    flex-direction: $direction;
+    justify-content: $justify-content;
 }
 
-// @mixin respond-to($breakpoint) {
-//     @if $breakpoint == 'mobile' {
-//         @media (max-width: 600px) { @content; }
-//     } @else if $breakpoint == 'tablet' {
-//         @media (max-width: 900px) { @content; }
-//     } @else if $breakpoint == 'desktop' {
-//         @media (max-width: 1200px) { @content; }
-//     }
-// }
+@mixin button-styles($bg-color, $border-color, $text-color, $padding: $base-spacing 2 * $base-spacing) {
+    padding: $padding;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    color: $text-color;
+    border-radius: $base-spacing;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        background-color: $border-color;
+        color: $bg-color;
+        border: 1px solid $bg-color;
+    }
+}

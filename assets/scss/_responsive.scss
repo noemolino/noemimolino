@@ -1,9 +1,13 @@
 @import 'variables';
 @import 'mixins';
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+    body {
+        padding: 4 * $base-spacing 13 * $base-spacing;
+    }
+
     .container {
-        justify-content: space-around;
+        @include flex-center(row, space-around);
     }
 
     .nav-links {
@@ -17,12 +21,98 @@
         border-radius: 0;
 
         li {
-            margin-left: $base-spacing;
+            margin-left: 2 * $base-spacing;
             margin-top: 0;
         }
     }
 
     .hamburger {
         display: none;
+    }
+
+    .profile-section {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+
+        .profile-name,
+        .profile-image,
+        .profile-cta {
+            flex: 1;
+            margin-bottom: 0;
+            @include flex-center(center, center);
+        }
+
+        .profile-name {
+            order: 1;
+            flex-direction: column;
+        }
+
+        .profile-image {
+            order: 2;
+            width: 60%;
+        }
+
+        .profile-cta {
+            order: 3;
+            flex-direction: column;
+        }
+    }
+
+    .about {
+        flex-direction: row;
+
+        .image,
+        .content {
+            flex: 1;
+        }
+    }
+
+    .cards-container {
+        flex-direction: row;
+        @include flex-center(row, center);
+    }
+
+    .card {
+        width: calc(50% - 2 * $base-spacing);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .responsive-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .column {
+            flex-basis: 48%;
+            margin-bottom: 0;
+
+            .scroll-container {
+                display: block;
+                overflow: visible;
+
+                .card {
+                    margin: 2 * $base-spacing 0;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        .image {
+            img {
+                width: 60%;
+            }
+        }
+    }
+
+    .card {
+        width: calc(33% - 2 * $base-spacing);
     }
 }

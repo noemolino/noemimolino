@@ -5,10 +5,81 @@
 }
 
 body {
-  font-family: "Roboto, sans-serif";
-  color: #1b1b1b;
-  background-color: #f0f0f0;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #303030;
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 16px;
+}
+
+section {
+  padding: 16px 0;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: #03989e;
+  border-radius: 8px;
+  width: fit-content;
+  color: #ffffff;
+  gap: 8px;
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+a {
+  color: #303030;
+}
+
+.cta-primary {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #303030;
+  color: #303030;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cta-primary:hover {
+  background-color: #303030;
+  color: white;
+  border: 1px solid white;
+}
+.cta-primary:hover {
+  padding: 8px 16px;
+  background-color: #03989e;
+  border: 1px solid white;
+  color: #03989e;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cta-primary:hover:hover {
+  background-color: white;
+  color: #03989e;
+  border: 1px solid #03989e;
+}
+
+.cta-secondary {
+  padding: 8px 0;
+  background-color: transparent;
+  border: 1px solid none;
+  color: #303030;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cta-secondary:hover {
+  background-color: none;
+  color: transparent;
+  border: 1px solid transparent;
+}
+.cta-secondary:hover {
+  color: #03989e;
 }
 
 header {
@@ -18,6 +89,7 @@ header {
 .container {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   background-color: #303030;
   padding: 16px;
@@ -40,7 +112,6 @@ header {
 }
 .nav-links li {
   margin-top: 16px;
-  margin-left: 0;
 }
 .nav-links li a {
   color: white;
@@ -64,8 +135,232 @@ header {
   border-radius: 2px;
 }
 
-@media (min-width: 769px) {
+.profile-section {
+  display: flex;
+  flex-direction: column;
+}
+.profile-section .profile-name {
+  order: 2;
+  margin-bottom: 16px;
+}
+.profile-section .profile-image {
+  order: 1;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.profile-section .profile-image img {
+  width: 80%;
+}
+.profile-section .profile-cta {
+  order: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .image {
+  text-align: center;
+}
+.about .image img {
+  width: 80%;
+}
+
+.footer {
+  background-color: #303030;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .social-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer .social-icons .social-icon {
+  margin: 0 10px;
+}
+.footer .social-icons .social-icon img {
+  width: 24px;
+  height: 24px;
+}
+.footer .social-icons .social-icon:hover img {
+  opacity: 0.7;
+}
+.footer .copyright {
+  font-size: 12px;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin: 8px;
+  padding: 8px 8px 32px;
+  text-align: center;
+  width: calc(100% - 16px);
+}
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card .card-title {
+  font-size: 1.3em;
+  margin: 8px 0;
+}
+.card .card-description {
+  font-size: 1em;
+  color: #303030;
+  margin-bottom: 24px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  justify-items: center;
+  margin: 16px 0;
+}
+.skills-grid img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.responsive-section {
+  padding: 20px;
+}
+.responsive-section .column:first-of-type {
+  margin-bottom: 40px;
+}
+.responsive-section .section-title {
+  text-align: center;
+  margin: 16px 0;
+}
+.responsive-section .scroll-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 0;
+}
+.responsive-section .scroll-container .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 250px;
+  flex: 0 0 auto;
+  margin: 8px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  scroll-snap-align: start;
+  width: fit-content;
+  text-align: left;
+}
+.responsive-section .scroll-container .card .card-title {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.responsive-section .scroll-container .card .card-place {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.responsive-section .scroll-container .card .card-description {
+  margin-bottom: 8px;
+  flex-grow: 1;
+}
+.responsive-section .scroll-container .card .card-period {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.contact-form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.contact-form-section form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form-section form label {
+  margin-bottom: 8px;
+}
+.contact-form-section form input,
+.contact-form-section form textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #303030;
+  border-radius: 8px;
+}
+.contact-form-section form button {
+  padding: 8px 16px;
+  background-color: #03989e;
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact-form-section form button:hover {
+  background-color: white;
+  color: #03989e;
+  border: 1px solid #03989e;
+}
+.contact-form-section form button:hover {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #303030;
+  color: #303030;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact-form-section form button:hover:hover {
+  background-color: #303030;
+  color: white;
+  border: 1px solid white;
+}
+.contact-form-section form #response-message {
+  margin-top: 8px;
+  color: #303030;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 32px 104px;
+  }
   .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     justify-content: space-around;
   }
   .nav-links {
@@ -84,6 +379,78 @@ header {
   }
   .hamburger {
     display: none;
+  }
+  .profile-section {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+  .profile-section .profile-name,
+  .profile-section .profile-image,
+  .profile-section .profile-cta {
+    flex: 1;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    justify-content: center;
+  }
+  .profile-section .profile-name {
+    order: 1;
+    flex-direction: column;
+  }
+  .profile-section .profile-image {
+    order: 2;
+    width: 60%;
+  }
+  .profile-section .profile-cta {
+    order: 3;
+    flex-direction: column;
+  }
+  .about {
+    flex-direction: row;
+  }
+  .about .image,
+  .about .content {
+    flex: 1;
+  }
+  .cards-container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card {
+    width: calc(50% - 16px);
+  }
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .responsive-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .responsive-section .column {
+    flex-basis: 48%;
+    margin-bottom: 0;
+  }
+  .responsive-section .column .scroll-container {
+    display: block;
+    overflow: visible;
+  }
+  .responsive-section .column .scroll-container .card {
+    margin: 16px 0;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .about .image img {
+    width: 60%;
+  }
+  .card {
+    width: calc(33% - 16px);
   }
 }
 

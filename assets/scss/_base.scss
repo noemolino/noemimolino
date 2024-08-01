@@ -9,7 +9,42 @@
 
 body {
     font-family: $base-font;
-    color: $font-color;
-    background-color: #f0f0f0;
-    font-size: 18px;
+    color: $primary-color;
+    background-color: #ffffff;
+    font-size: $font-size-base;
+    padding: 2 * $base-spacing;
+}
+
+section {
+    padding: 2 * $base-spacing 0;
+}
+
+.subtitle {
+    @include flex-center(row, center);
+    padding: $base-spacing 2 * $base-spacing;
+    background-color: $secondary-color;
+    border-radius: $base-spacing;
+    width: fit-content;
+    color: #ffffff;
+    gap: $base-spacing;
+    font-size: $font-size-small;
+    margin: 2 * $base-spacing 0;
+}
+
+a {
+    color: $primary-color;
+}
+
+.cta-primary {
+    @include button-styles(white, $primary-color, $primary-color);
+    &:hover {
+        @include button-styles($secondary-color, white, $secondary-color);
+    }
+}
+
+.cta-secondary {
+    @include button-styles(transparent, none, $primary-color, $base-spacing 0);
+    &:hover {
+        color: $secondary-color;
+    }
 }

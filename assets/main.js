@@ -40,3 +40,51 @@ document.addEventListener('click', function(event) {
         isMenuOpen = false;
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollRows = document.querySelectorAll('.scroll-row .scroll-content');
+
+    scrollRows.forEach(row => {
+        const content = row.innerHTML;
+        row.innerHTML = content + content; // Duplica i loghi per scorrimento continuo
+    });
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+            } else {
+                entry.target.style.animationPlayState = 'paused';
+            }
+        });
+    }, observerOptions);
+
+    scrollRows.forEach(row => {
+        observer.observe(row);
+    });
+});
+
+// Replace with your own user ID from EmailJS
+emailjs.init("MVqs4bejdexAE7d1m");
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission
+
+    const form = event.target;
+
+    emailjs.sendForm('service_mue4314', 'template_m9yqlpb', form)
+        .then(function(response) {
+            document.getElementById('response-message').innerText = 'Email sent successfully!';
+            form.reset(); // Optional: Reset the form fields after submission
+        }, function(error) {
+            document.getElementById('response-message').innerText = 'Failed to send email. Please try again.';
+            console.error('Failed to send email:', error);
+        });
+});
+
