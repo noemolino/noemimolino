@@ -8,6 +8,7 @@
 
     .container {
         @include flex-center(row, space-around);
+        align-items: center;
     }
 
     .nav-links {
@@ -41,6 +42,7 @@
             flex: 1;
             margin-bottom: 0;
             @include flex-center(center, center);
+            align-items: center;
         }
 
         .profile-name {
@@ -71,6 +73,7 @@
     .cards-container {
         flex-direction: row;
         @include flex-center(row, center);
+        align-items: center;
     }
 
     .card {

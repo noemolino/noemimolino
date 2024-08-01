@@ -3,6 +3,7 @@
 
 .container {
     @include flex-center(row, space-between);
+    align-items: center;
     background-color: $primary-color;
     padding: 2 * $base-spacing;
     width: 100%;
@@ -14,9 +15,9 @@
     flex-direction: column;
     background-color: $primary-color;
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
+    top: 85px;
+    right: 2 * $base-spacing;
+    width: 50%;
     text-align: right;
     padding: 20px;
     border-radius: $base-spacing;
@@ -72,11 +73,13 @@
     .profile-cta {
         order: 3;
         @include flex-center(row, space-between);
+        align-items: center;
     }
 }
 
 .about {
     @include flex-center(column, center);
+    align-items: center;
 
     .image {
         text-align: center;
@@ -95,6 +98,7 @@
 
     .social-icons {
         @include flex-center(row, center);
+        align-items: center;
         margin-bottom: 10px;
 
         .social-icon {
@@ -118,6 +122,7 @@
 
 .cards-container {
     @include flex-center(column, center);
+    align-items: center;
     padding: $base-spacing;
 }
 
@@ -176,7 +181,8 @@
     }
 
     .scroll-container {
-        @include flex-center(row, center);
+        // @include flex-center(row, center);
+        display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
@@ -228,6 +234,7 @@
 
     form {
         @include flex-center(column, center);
+        align-items: center;
 
         label {
             margin-bottom: $base-spacing;
