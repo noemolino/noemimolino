@@ -1,121 +1,138 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 @media (min-width: 768px) {
-    body {
-        padding: 4 * $base-spacing 13 * $base-spacing;
+  body {
+    padding: 4 * $base-spacing 13 * $base-spacing;
+  }
+
+  .container {
+    @include flex-center(row, space-around);
+    align-items: center;
+  }
+
+  .nav-links {
+    @include flex-center(row, space-around);
+    position: static;
+    width: auto;
+    text-align: left;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+
+    li {
+      margin-left: 2 * $base-spacing;
+      margin-top: 0;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .profile-section {
+    @include flex-center(row, space-around);
+    text-align: left;
+
+    .profile-name,
+    .profile-image,
+    .profile-cta {
+      flex: 1;
+      margin-bottom: 0;
+      @include flex-center(center, center);
+      align-items: center;
     }
 
-    .container {
-        @include flex-center(row, space-around);
-        align-items: center;
+    .profile-name {
+      order: 1;
+      flex-direction: column;
     }
 
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        text-align: left;
-        padding: 0;
-        background-color: transparent;
-        border-radius: 0;
+    .profile-image {
+      order: 2;
+      width: 60%;
+    }
 
-        li {
-            margin-left: 2 * $base-spacing;
-            margin-top: 0;
+    .profile-cta {
+      order: 3;
+      flex-direction: column;
+    }
+  }
+
+  .about {
+    flex-direction: row;
+
+    .image,
+    .content {
+      flex: 1;
+    }
+  }
+
+  .cards-container {
+    @include flex-center(row, center);
+    align-items: center;
+  }
+
+  .card {
+    width: calc(50% - 2 * $base-spacing);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .responsive-section {
+    @include flex-center(row, space-between);
+
+    .column {
+      flex-basis: 48%;
+      margin-bottom: 0;
+
+      .scroll-container {
+        display: block;
+        overflow: visible;
+
+        .card {
+          margin: 2 * $base-spacing 0;
+          flex-direction: column;
         }
+      }
     }
+  }
 
-    .hamburger {
-        display: none;
-    }
-
-    .profile-section {
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-
-        .profile-name,
-        .profile-image,
-        .profile-cta {
-            flex: 1;
-            margin-bottom: 0;
-            @include flex-center(center, center);
-            align-items: center;
-        }
-
-        .profile-name {
-            order: 1;
-            flex-direction: column;
-        }
-
-        .profile-image {
-            order: 2;
-            width: 60%;
-        }
-
-        .profile-cta {
-            order: 3;
-            flex-direction: column;
-        }
-    }
-
-    .about {
-        flex-direction: row;
-
-        .image,
-        .content {
-            flex: 1;
-        }
-    }
-
-    .cards-container {
-        flex-direction: row;
-        @include flex-center(row, center);
-        align-items: center;
-    }
-
-    .card {
-        width: calc(50% - 2 * $base-spacing);
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    .responsive-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .column {
-            flex-basis: 48%;
-            margin-bottom: 0;
-
-            .scroll-container {
-                display: block;
-                overflow: visible;
-
-                .card {
-                    margin: 2 * $base-spacing 0;
-                    flex-direction: column;
-                }
-            }
-        }
-    }
+  .contact .column .image {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
-@media (min-width: 1200px) {
-    .about {
-        .image {
-            img {
-                width: 60%;
-            }
-        }
+@media (min-width: 1000px) {
+  .about {
+    .image {
+      img {
+        width: 60%;
+      }
+    }
+  }
+
+  .card {
+    width: calc(33% - 2 * $base-spacing);
+  }
+
+  .contact {
+    @include flex-center(row, space-between);
+    align-items: center;
+    gap: 2 * $base-spacing;
+
+    .column{
+      flex: 1;
     }
 
-    .card {
-        width: calc(33% - 2 * $base-spacing);
+    .column .image {
+      width: 100%;
     }
+    .contact-form-section {
+      margin: 2 * $base-spacing auto;
+    }
+  }
 }

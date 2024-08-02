@@ -1,263 +1,266 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .container {
-    @include flex-center(row, space-between);
-    align-items: center;
-    background-color: $primary-color;
-    padding: 2 * $base-spacing;
-    width: 100%;
+  @include flex-center(row, space-between);
+  align-items: center;
+  background-color: $primary-color;
+  padding: 2 * $base-spacing;
+  width: 100%;
 }
 
 .nav-links {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    background-color: $primary-color;
-    position: absolute;
-    top: 85px;
-    right: 2 * $base-spacing;
-    width: 50%;
-    text-align: right;
-    padding: 20px;
-    border-radius: $base-spacing;
-    margin: 0;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: $primary-color;
+  position: absolute;
+  top: 85px;
+  right: 2 * $base-spacing;
+  width: 50%;
+  text-align: right;
+  padding: 20px;
+  border-radius: $base-spacing;
+  margin: 0;
 
-    li {
-        margin-top: 2 * $base-spacing;
-        a {
-            color: white;
-            text-decoration: none;
-        }
+  li {
+    margin-top: 2 * $base-spacing;
+    a {
+      color: $white;
+      text-decoration: none;
     }
+  }
 
-    &.active {
-        display: flex;
-        align-items: center;
-    }
+  &.active {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        margin: 3px 0;
-        border-radius: 2px;
-    }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: $white;
+    margin: 3px 0;
+    border-radius: 2px;
+  }
 }
 
 .profile-section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    .profile-name {
-        order: 2;
-        margin-bottom: 2 * $base-spacing;
+  .profile-name {
+    order: 2;
+    margin-bottom: 2 * $base-spacing;
+  }
+
+  .profile-image {
+    order: 1;
+    margin-bottom: 2 * $base-spacing;
+    text-align: center;
+
+    img {
+      width: 80%;
     }
+  }
 
-    .profile-image {
-        order: 1;
-        margin-bottom: 2 * $base-spacing;
-        text-align: center;
-
-        img {
-            width: 80%;
-        }
-    }
-
-    .profile-cta {
-        order: 3;
-        @include flex-center(row, space-between);
-        align-items: center;
-    }
+  .profile-cta {
+    order: 3;
+    @include flex-center(row, space-between);
+    align-items: center;
+  }
 }
 
 .about {
-    @include flex-center(column, center);
-    align-items: center;
+  @include flex-center(column, center);
+  align-items: center;
 
-    .image {
-        text-align: center;
+  .image {
+    text-align: center;
 
-        img {
-            width: 80%;
-        }
+    img {
+      width: 80%;
     }
+  }
 }
 
 .footer {
-    background-color: $primary-color;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 
-    .social-icons {
-        @include flex-center(row, center);
-        align-items: center;
-        margin-bottom: 10px;
+  .social-icons {
+    @include flex-center(row, center);
+    align-items: center;
+    margin-bottom: 10px;
 
-        .social-icon {
-            margin: 0 10px;
+    .social-icon {
+      margin: 0 10px;
 
-            img {
-                width: 24px;
-                height: 24px;
-            }
+      img {
+        width: 24px;
+        height: 24px;
+      }
 
-            &:hover img {
-                opacity: 0.7;
-            }
-        }
+      &:hover img {
+        opacity: 0.7;
+      }
     }
+  }
 
-    .copyright {
-        font-size: $font-size-footer;
-    }
+  .copyright {
+    font-size: $font-size-footer;
+  }
 }
 
 .cards-container {
-    @include flex-center(column, center);
-    align-items: center;
-    padding: $base-spacing;
+  @include flex-center(column, center);
+  align-items: center;
+  padding: $base-spacing;
 }
 
 .card {
-    background-color: $card-bg-color;
-    border-radius: $base-spacing;
-    box-shadow: $box-shadow;
-    margin: $base-spacing;
-    padding: $base-spacing $base-spacing 4 * $base-spacing;
-    text-align: center;
-    width: calc(100% - 2 * $base-spacing);
+  background-color: $white;
+  border-radius: $base-spacing;
+  box-shadow: $box-shadow;
+  margin: $base-spacing;
+  padding: $base-spacing $base-spacing 4 * $base-spacing;
+  text-align: center;
+  width: calc(100% - 2 * $base-spacing);
 
-    img {
-        width: 100%;
-        border-top-left-radius: $base-spacing;
-        border-top-right-radius: $base-spacing;
-    }
+  img {
+    width: 100%;
+    border-top-left-radius: $base-spacing;
+    border-top-right-radius: $base-spacing;
+  }
 
-    .card-title {
-        font-size: $font-size-title;
-        margin: $base-spacing 0;
-    }
+  .card-title {
+    font-size: $font-size-title;
+    margin: $base-spacing 0;
+  }
 
-    .card-description {
-        font-size: $font-size-description;
-        color: $primary-color;
-        margin-bottom: 3 * $base-spacing;
-    }
+  .card-description {
+    font-size: $font-size-description;
+    color: $primary-color;
+    margin-bottom: 3 * $base-spacing;
+  }
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3 * $base-spacing;
-    justify-items: center;
-    margin: 2 * $base-spacing 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3 * $base-spacing;
+  justify-items: center;
+  margin: 2 * $base-spacing 0;
 
-    img {
-        max-width: 80px;
-        max-height: 80px;
-    }
+  img {
+    max-width: 80px;
+    max-height: 80px;
+  }
 }
 
 .responsive-section {
-    padding: 20px;
+  padding: 20px;
 
-    .column {
-        &:first-of-type {
-            margin-bottom: 5 * $base-spacing;
-        }
+  .column {
+    &:first-of-type {
+      margin-bottom: 5 * $base-spacing;
     }
+  }
 
-    .section-title {
-        text-align: center;
-        margin: 2 * $base-spacing 0;
+  .section-title {
+    text-align: center;
+    margin: 2 * $base-spacing 0;
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: $base-spacing 0;
+
+    .card {
+      @include flex-center(column, space-between);
+      min-width: 220px;
+      flex: 0 0 auto;
+      margin: $base-spacing;
+      padding: 2 * $base-spacing;
+      background-color: $white;
+      border-radius: $base-spacing;
+      box-shadow: $box-shadow;
+      scroll-snap-align: start;
+      width: fit-content;
+      text-align: left;
+
+      .card-title {
+        font-size: $font-size-title;
+        margin-bottom: $base-spacing;
+      }
+
+      .card-place {
+        margin-bottom: $base-spacing;
+        font-weight: 700;
+      }
+
+      .card-description {
+        margin-bottom: $base-spacing;
+        flex-grow: 1;
+      }
+
+      .card-period {
+        font-size: $font-size-card-period;
+        color: #666;
+      }
     }
-
-    .scroll-container {
-        // @include flex-center(row, center);
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding: $base-spacing 0;
-
-        .card {
-            @include flex-center(column, space-between);
-            min-width: 250px;
-            flex: 0 0 auto;
-            margin: $base-spacing;
-            padding: 2 * $base-spacing;
-            background-color: $card-bg-color;
-            border-radius: $base-spacing;
-            box-shadow: $box-shadow;
-            scroll-snap-align: start;
-            width: fit-content;
-            text-align: left;
-
-            .card-title {
-                font-size: $font-size-title;
-                margin-bottom: $base-spacing;
-            }
-
-            .card-place {
-                margin-bottom: $base-spacing;
-                font-weight: 700;
-            }
-
-            .card-description {
-                margin-bottom: $base-spacing;
-                flex-grow: 1;
-            }
-
-            .card-period {
-                font-size: $font-size-card-period;
-                color: #666;
-            }
-        }
-    }
+  }
 }
 
-.contact-form-section {
+.contact {
+  @include flex-center(column, space-between);
+  .contact-form-section {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2 * $base-spacing $base-spacing;
     padding: 2 * $base-spacing;
-    background-color: $card-bg-color;
+    background-color: $white;
     border-radius: $base-spacing;
     box-shadow: $box-shadow;
 
     form {
-        @include flex-center(column, center);
-        align-items: center;
+      @include flex-center(column, center);
+      // align-items: center;
 
-        label {
-            margin-bottom: $base-spacing;
-        }
+      label {
+        margin-bottom: $base-spacing;
+      }
 
-        input,
-        textarea {
-            margin-bottom: 2 * $base-spacing;
-            padding: $base-spacing;
-            border: 1px solid $primary-color;
-            border-radius: $base-spacing;
-        }
+      input,
+      textarea {
+        margin-bottom: 2 * $base-spacing;
+        padding: $base-spacing;
+        border: 1px solid $primary-color;
+        border-radius: $base-spacing;
+      }
 
-        button {
-            @include button-styles($secondary-color, white, white);
-            &:hover {
-                @include button-styles(white, $primary-color, $primary-color);
-            }
+      button {
+        @include button-styles($secondary-color, $white, $white);
+        line-height: 2 * $base-spacing;
+        &:hover {
+          @include button-styles($white, $primary-color, $primary-color);
         }
+      }
 
-        #response-message {
-            margin-top: $base-spacing;
-            color: $primary-color;
-        }
+      #response-message {
+        margin-top: $base-spacing;
+        color: $primary-color;
+      }
     }
+  }
 }

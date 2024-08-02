@@ -10,7 +10,7 @@
 body {
     font-family: $base-font;
     color: $primary-color;
-    background-color: #ffffff;
+    background-color: $white;
     font-size: $font-size-base;
     padding: 2 * $base-spacing;
 }
@@ -25,7 +25,7 @@ section {
     background-color: $secondary-color;
     border-radius: $base-spacing;
     width: fit-content;
-    color: #ffffff;
+    color: $white;
     gap: $base-spacing;
     font-size: $font-size-small;
     margin: 2 * $base-spacing 0;
@@ -36,9 +36,9 @@ a {
 }
 
 .cta-primary {
-    @include button-styles(white, $primary-color, $primary-color);
+    @include button-styles($white, $primary-color, $primary-color);
     &:hover {
-        @include button-styles($secondary-color, white, $secondary-color);
+        @include button-styles($secondary-color, $white, $secondary-color);
     }
 }
 

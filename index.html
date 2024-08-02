@@ -26,13 +26,15 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img
-            src="assets/images/logo.png"
-            alt="logo_nm"
-            class="logo"
-            width="40"
-            height="40"
-          />
+          <a href="#home">
+            <img
+              src="assets/images/logo.png"
+              alt="logo_nm"
+              class="logo"
+              width="40"
+              height="40"
+            />
+          </a>
         </div>
         <nav>
           <ul class="nav-links">
@@ -41,7 +43,7 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#carrier">Carrier</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="hamburger" onclick="toggleMenu(this)">
             <div class="bar"></div>
@@ -57,7 +59,7 @@
         <div class="subtitle">
           <img
             src="assets/images/hello.png"
-            alt="logo_nm"
+            alt="hello"
             class="logo"
             width="20"
             height="20"
@@ -68,13 +70,13 @@
         <p>Frontend developer</p>
       </div>
       <div class="profile-image">
-        <img src="assets/images/avatar_hello.png" alt="Noemi Molino" />
+        <img src="assets/images/avatar_hello.png" alt="avatar hello" />
       </div>
       <div class="profile-cta">
         <a href="assets/documents/Molino_CV.pdf" class="cta-secondary" download
           >Download CV</a
         >
-        <a href="#contact" class="cta-primary">Contact</a>
+        <a href="contact.html" class="cta-primary">Contact</a>
       </div>
     </section>
 
@@ -86,7 +88,7 @@
         <div class="subtitle">
           <img
             src="assets/images/smile.png"
-            alt="logo_nm"
+            alt="smile"
             class="logo"
             width="20"
             height="20"
@@ -115,7 +117,7 @@
         <div class="subtitle">
           <img
             src="assets/images/brush.png"
-            alt="logo_nm"
+            alt="brush"
             class="logo"
             width="20"
             height="20"
@@ -126,7 +128,7 @@
       </div>
       <div class="cards-container">
         <div class="card">
-          <img src="assets/images/anna_gabriele.jpg" alt="Card Image 1" />
+          <img src="assets/images/anna_gabriele.jpg" alt="Anna Gabriele" />
           <h3 class="card-title">Wedding booklet</h3>
           <p class="card-description">
             To create a personalized wedding booklet, I worked on texts, images,
@@ -134,15 +136,12 @@
             that every detail was perfect and that the guests had a special
             keepsake from the event.
           </p>
-          <a
-            href="assets/documents/wedding_booklet.pdf"
-            class="cta-primary"
-            download
-            >Download pdf</a
+          <a href="contact.html" class="cta-secondary"
+            >To see the finished booklet, write to me!</a
           >
         </div>
         <div class="card">
-          <img src="assets/images/logo_pedagogista.png" alt="Card Image 2" />
+          <img src="assets/images/logo_pedagogista.png" alt="logo flyer" />
           <h3 class="card-title">Flyer</h3>
           <p class="card-description">
             I designed a super eye-catching flyer to promote an activity. I used
@@ -150,8 +149,8 @@
             I divided the flyer into different sections to help users quickly
             find the information they need.
           </p>
-          <a href="assets/documents/flyer.pdf" class="cta-primary" download
-            >Download flyer</a
+          <a href="contact.html" class="cta-secondary"
+            >To learn about my project, contact me!</a
           >
         </div>
       </div>
@@ -162,7 +161,7 @@
         <div class="subtitle">
           <img
             src="assets/images/it-pc.png"
-            alt="logo_nm"
+            alt="pc"
             class="logo"
             width="20"
             height="20"
@@ -191,11 +190,11 @@
     </section>
 
     <section class="carrier" id="carrier">
-      <div>
+      <div class="column">
         <div class="subtitle">
           <img
             src="assets/images/suitcase.png"
-            alt="logo_nm"
+            alt="suitcase"
             class="logo"
             width="20"
             height="20"
@@ -300,11 +299,11 @@
     </section>
 
     <section class="contact" id="contact">
-      <div>
+      <div class="column">
         <div class="subtitle">
           <img
             src="assets/images/contact.png"
-            alt="logo_nm"
+            alt="contact"
             class="logo"
             width="20"
             height="20"
@@ -312,7 +311,13 @@
           <p>Contact</p>
         </div>
         <h2>Get in touch</h2>
+        <p>
+          If you want to learn more about me or see the work I've done, don't
+          hesitate to fill out the form below or contact me through social
+          media.
+        </p>
       </div>
+     <div class="column">
       <div class="contact-form-section">
         <form id="contact-form">
           <label for="name">Name:</label>
@@ -328,6 +333,7 @@
         </form>
         <p id="response-message"></p>
       </div>
+     </div>
     </section>
 
     <footer class="footer">

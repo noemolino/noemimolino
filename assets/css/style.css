@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #303030;
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 16px;
   padding: 16px;
 }
@@ -24,7 +24,7 @@ section {
   background-color: #03989e;
   border-radius: 8px;
   width: fit-content;
-  color: #ffffff;
+  color: #fff;
   gap: 8px;
   font-size: 14px;
   margin: 16px 0;
@@ -36,7 +36,7 @@ a {
 
 .cta-primary {
   padding: 8px 16px;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #303030;
   color: #303030;
   border-radius: 8px;
@@ -45,20 +45,20 @@ a {
 }
 .cta-primary:hover {
   background-color: #303030;
-  color: white;
-  border: 1px solid white;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .cta-primary:hover {
   padding: 8px 16px;
   background-color: #03989e;
-  border: 1px solid white;
+  border: 1px solid #fff;
   color: #03989e;
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
 }
 .cta-primary:hover:hover {
-  background-color: white;
+  background-color: #fff;
   color: #03989e;
   border: 1px solid #03989e;
 }
@@ -113,7 +113,7 @@ header {
   margin-top: 16px;
 }
 .nav-links li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 .nav-links.active {
@@ -129,7 +129,7 @@ header {
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #fff;
   margin: 3px 0;
   border-radius: 2px;
 }
@@ -263,7 +263,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 250px;
+  min-width: 220px;
   flex: 0 0 auto;
   margin: 8px;
   padding: 16px;
@@ -291,59 +291,64 @@ header {
   color: #666;
 }
 
-.contact-form-section {
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact .contact-form-section {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 16px 8px;
   padding: 16px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-.contact-form-section form {
+.contact .contact-form-section form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
-.contact-form-section form label {
+.contact .contact-form-section form label {
   margin-bottom: 8px;
 }
-.contact-form-section form input,
-.contact-form-section form textarea {
+.contact .contact-form-section form input,
+.contact .contact-form-section form textarea {
   margin-bottom: 16px;
   padding: 8px;
   border: 1px solid #303030;
   border-radius: 8px;
 }
-.contact-form-section form button {
+.contact .contact-form-section form button {
   padding: 8px 16px;
   background-color: #03989e;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #fff;
+  color: #fff;
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
+  line-height: 16px;
 }
-.contact-form-section form button:hover {
-  background-color: white;
+.contact .contact-form-section form button:hover {
+  background-color: #fff;
   color: #03989e;
   border: 1px solid #03989e;
 }
-.contact-form-section form button:hover {
+.contact .contact-form-section form button:hover {
   padding: 8px 16px;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #303030;
   color: #303030;
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
 }
-.contact-form-section form button:hover:hover {
+.contact .contact-form-section form button:hover:hover {
   background-color: #303030;
-  color: white;
-  border: 1px solid white;
+  color: #fff;
+  border: 1px solid #fff;
 }
-.contact-form-section form #response-message {
+.contact .contact-form-section form #response-message {
   margin-top: 8px;
   color: #303030;
 }
@@ -361,6 +366,7 @@ header {
   .nav-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     position: static;
     width: auto;
     text-align: left;
@@ -376,6 +382,7 @@ header {
     display: none;
   }
   .profile-section {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: left;
@@ -410,7 +417,6 @@ header {
     flex: 1;
   }
   .cards-container {
-    flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -439,13 +445,33 @@ header {
     margin: 16px 0;
     flex-direction: column;
   }
+  .contact .column .image {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .about .image img {
     width: 60%;
   }
   .card {
     width: calc(33% - 16px);
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .contact .column {
+    flex: 1;
+  }
+  .contact .column .image {
+    width: 100%;
+  }
+  .contact .contact-form-section {
+    margin: 16px auto;
   }
 }
 
