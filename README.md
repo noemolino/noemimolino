@@ -1,69 +1,41 @@
-# My Portfolio
+# Noemi Molino Portfolio
 
-Welcome to my portfolio! This is a showcase of my skills, projects, work experience, and education. Feel free to explore and learn more about me and my work.
+Welcome to my portfolio website! This repository contains the source code for my personal portfolio, which showcases my skills, projects, and background.
 
-## Table of Contents
+## Overview
 
-- [Introduction](#introduction)
-- [About Me](#about-me)
-- [Portfolio](#portfolio)
-- [Skills](#skills)
-- [Work Experience](#work-experience)
-- [Education](#education)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contact](#contact)
+The portfolio consists of two main pages:
 
-## Introduction
+1. **index.html**:
+   - **About Me**: An introduction and background information.
+   - **Portfolio**: A selection of my projects.
+   - **Skills**: A list of technologies and tools I am proficient in.
+   - **Background**: My professional and educational experience.
+   - **Contact Form**: A simple form for reaching out.
 
-This portfolio website is a personal project to present my professional information in a clean and organized manner. It includes sections such as "About Me," "Portfolio," "Skills," "Work Experience," and "Education." The website is built with HTML, CSS, and Bootstrap, and it is hosted on GitHub Pages.
+2. **contact.html**:
+   - **Extended Contact Form**: A more detailed form for inquiries.
 
-## About Me
+## Technologies Used
 
-In this section, you can find a brief introduction about who I am, my interests, and my career goals. It provides an overview of my background and what motivates me.
+- **HTML**: Structure of the web pages.
+- **SCSS**: Styling of the pages with advanced CSS features.
+- **JavaScript**: For dynamic functionality and interactivity.
+- **EmailJS**: To handle form submissions and send emails.
+- **GitHub Pages**: Hosting the website.
 
-## Portfolio
+## Live Site
 
-The portfolio section showcases a selection of projects that I have worked on. Each project includes a brief description, the technologies used, and a link to the live project or repository.
+You can view the live portfolio here: [https://noemolino.github.io/noemimolino/](https://noemolino.github.io/noemimolino/)
 
-## Skills
+## Repository
 
-Here, you will find a list of my technical skills and proficiencies. This includes programming languages, frameworks, tools, and other relevant skills.
+The source code for this portfolio is available on GitHub: [https://github.com/noemolino/noemimolino](https://github.com/noemolino/noemimolino)
 
-## Work Experience
+## Getting Started
 
-This section details my professional career, including job titles, companies, durations, and a summary of my responsibilities and achievements in each role.
-
-## Education
-
-The education section outlines my academic background, including degrees, institutions, and any notable achievements or courses.
-
-## Installation
-
-If you would like to run this project locally, follow these steps:
+To get started with this project locally:
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/noemolino/noemimolino.git
-    ```
-
-2. Navigate to the project directory:
-    ```sh
-    cd your-portfolio
-    ```
-
-3. Open `index.html` in your preferred web browser.
-
-## Usage
-
-To explore the portfolio, simply navigate through the sections using the navigation bar. Click on the project links in the portfolio section to view more details about each project.
-
-## Contact
-
-Feel free to reach out to me if you have any questions or opportunities. You can contact me through the following channels:
-
-- Email: [noemimolino99@gmail.com](mailto:noemimolino99@gmail.com)
-- LinkedIn: [Noemi Molino](https://www.linkedin.com/in/noemi-molino-8807191b5/)
-- GitHub: [noemolino](https://github.com/noemolino)
-
-Thank you for visiting my portfolio!
+   ```bash
+   git clone https://github.com/noemolino/noemimolino.git
