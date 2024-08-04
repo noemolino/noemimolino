@@ -24,7 +24,7 @@ section {
   background-color: #03989e;
   border-radius: 8px;
   width: fit-content;
-  color: #303030;
+  color: #000;
   gap: 8px;
   font-size: 14px;
   margin: 16px 0;
@@ -322,7 +322,7 @@ header {
   padding: 8px 16px;
   background-color: #03989e;
   border: 1px solid #fff;
-  color: #303030;
+  color: #000;
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
