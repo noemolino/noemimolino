@@ -62,7 +62,7 @@
 
   .profile-image {
     order: 1;
-    margin-bottom: 2 * $base-spacing;
+    // margin-bottom: 2 * $base-spacing;
     text-align: center;
 
     img {
@@ -250,7 +250,7 @@
       }
 
       button {
-        @include button-styles($secondary-color, $white, $white);
+        @include button-styles($secondary-color, $white, #000);
         line-height: 2 * $base-spacing;
         &:hover {
           @include button-styles($white, $primary-color, $primary-color);
