@@ -250,7 +250,7 @@
       }
 
       button {
-        @include button-styles($secondary-color, $white, #000);
+        @include button-styles($secondary-color, $white, $primary-color);
         line-height: 2 * $base-spacing;
         &:hover {
           @include button-styles($white, $primary-color, $primary-color);
