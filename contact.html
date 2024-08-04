@@ -23,7 +23,12 @@
     <meta name=" description" content="Noemi Molino's contact page" />
   </head>
   <body>
-    <header>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#nav" class="skip-link">Skip to navigation</a>
+    <a href="#footer" class="skip-link">Skip to footer</a>
+
+<header id="nav">
       <div class="container">
         <div class="logo">
           <a href="index.html#home">
@@ -53,60 +58,62 @@
         </nav>
       </div>
     </header>
-
-    <section class="about" id="about">
-      <!-- <div class="image">
-        <img src="assets/images/avatar_hello.png" alt="avatar hello" />
-      </div> -->
-      <div class="contact">
-        <div class="column">
-          <div class="image">
-            <img src="assets/images/avatar_hello.png" alt="avatar hello" />
-          </div>
-        </div>
-        <div class="column">
-          <div class="subtitle">
-            <img
-              src="assets/images/contact.png"
-              alt="phone and email"
-              class="logo"
-              width="20"
-              height="20"
-            />
-            <p>Contact</p>
-          </div>
-          <h2>Get in touch</h2>
-          <p>
-            If you want to learn more about me or see the work I've done, don't
-            hesitate to fill out the form below or contact me through social
-            media.
-          </p>
-          <div class="contact-form-section">
-            <form id="contact-form">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-
-              <label for="surname">Surname:</label>
-              <input type="text" id="surname" name="surname" required />
-
-              <label for="company">Company:</label>
-              <input type="text" id="company" name="company" required />
-
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-
-              <button type="submit">Send</button>
-            </form>
-            <p id="response-message"></p>
-          </div>
+<main id="main-content">
+  <section class="about" id="about">
+    <!-- <div class="image">
+      <img src="assets/images/avatar_hello.png" alt="avatar hello" />
+    </div> -->
+    <div class="contact">
+      <div class="column">
+        <div class="image">
+          <img src="assets/images/avatar_hello.png" alt="avatar hello" />
         </div>
       </div>
-    </section>
+      <div class="column">
+        <div class="subtitle">
+          <img
+            src="assets/images/contact.png"
+            alt="phone and email"
+            class="logo"
+            width="20"
+            height="20"
+          />
+          <p>Contact</p>
+        </div>
+        <h2>Get in touch</h2>
+        <p>
+          If you want to learn more about me or see the work I've done, don't
+          hesitate to fill out the form below or contact me through social
+          media.
+        </p>
+        <div class="contact-form-section">
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required=""/>
 
-    <footer class="footer">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required=""/>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+          <p id="response-message"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+    
+
+    <footer class="footer" id="footer">
       <div class="social-icons">
         <a
           href="https://www.linkedin.com/in/noemi-molino-8807191b5/"

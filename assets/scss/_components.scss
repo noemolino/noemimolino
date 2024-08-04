@@ -1,6 +1,25 @@
 @import "variables";
 @import "mixins";
 
+.skip-link {
+  position: absolute;
+  top: -7*$base-spacing;;
+  left: 0;
+  background-color: $secondary-color;
+  color: #000;
+  padding: $base-spacing;
+  text-align: center;
+  z-index: 1000;
+  border: 1px solid $secondary-color;
+  border-radius: $base-spacing;
+  transition: top 0.3s;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+
 .container {
   @include flex-center(row, space-between);
   align-items: center;
