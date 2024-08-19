@@ -371,6 +371,7 @@ header {
 .contact .contact-form-section form textarea {
   width: 100%;
   resize: vertical;
+  min-height: 50px;
 }
 
 @media (min-width: 768px) {
