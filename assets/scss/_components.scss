@@ -280,6 +280,11 @@
         margin-top: $base-spacing;
         color: $primary-color;
       }
+
+      textarea {
+        width: 100%;
+        resize: vertical;
+    }
     }
   }
 }
