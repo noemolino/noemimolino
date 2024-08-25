@@ -74,13 +74,15 @@
   flex-direction: column;
 
   .profile-name {
-    // order: 2;
     margin-bottom: 2 * $base-spacing;
     text-align: center;
+
+    .subtitle{
+      justify-content: center;
+    }
   }
 
   .profile-image {
-    // order: 1;
     text-align: center;
 
     img {
@@ -89,7 +91,6 @@
   }
 
   .profile-cta {
-    // order: 3;
     @include flex-center(row, space-between);
     align-items: center;
   }

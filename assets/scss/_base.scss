@@ -12,10 +12,6 @@ h1, h2 {
     font-weight: bold;
     font-style: italic;
   }
-  
-//   body, p, span, a {
-//     font-family: $base-font;
-//   }
 
 body {
     font-family: $base-font;
@@ -31,11 +27,6 @@ section {
 
 .subtitle {
     @include flex-center(row, flex-start);
-    // padding: $base-spacing 2 * $base-spacing;
-    // border: 2px dashed $secondary-color;
-    // background-color: $secondary-color;
-    // border-radius: $base-spacing;
-    // width: fit-content;
     font-family: $subtitle-font;
     font-weight: bold;
     font-style: italic;

@@ -170,6 +170,9 @@ header {
   margin-bottom: 16px;
   text-align: center;
 }
+.profile-section .profile-name .subtitle {
+  justify-content: center;
+}
 .profile-section .profile-image {
   text-align: center;
 }
