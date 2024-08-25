@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+h1, h2 {
+    font-family: $subtitle-font;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+//   body, p, span, a {
+//     font-family: $base-font;
+//   }
+
 body {
     font-family: $base-font;
     color: $primary-color;
@@ -20,15 +30,20 @@ section {
 }
 
 .subtitle {
-    @include flex-center(row, center);
-    padding: $base-spacing 2 * $base-spacing;
-    background-color: $secondary-color;
-    border-radius: $base-spacing;
-    width: fit-content;
-    color: #000;
+    @include flex-center(row, flex-start);
+    // padding: $base-spacing 2 * $base-spacing;
+    // border: 2px dashed $secondary-color;
+    // background-color: $secondary-color;
+    // border-radius: $base-spacing;
+    // width: fit-content;
+    font-family: $subtitle-font;
+    font-weight: bold;
+    font-style: italic;
+    color: $secondary-color;
     gap: $base-spacing;
-    font-size: $font-size-small;
+    font-size: $font-size-subtitle;
     margin: 2 * $base-spacing 0;
+    align-items: center;
 }
 
 a {
@@ -44,7 +59,13 @@ a {
 
 .cta-secondary {
     @include button-styles(transparent, none, $primary-color, $base-spacing 0);
+    border-bottom: 1px solid $primary-color;
+    border-radius: 0;
+    padding: 0;
+
     &:hover {
         color: $secondary-color;
+        border-bottom: 1px solid $secondary-color;
+        margin: 0;
     }
 }

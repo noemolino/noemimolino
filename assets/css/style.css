@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+h1, h2 {
+  font-family: "Cormorant+Garamond", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #303030;
@@ -19,15 +25,15 @@ section {
 .subtitle {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 8px 16px;
-  background-color: #03989e;
-  border-radius: 8px;
-  width: fit-content;
-  color: #000;
+  justify-content: flex-start;
+  font-family: "Cormorant+Garamond", serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #03989e;
   gap: 8px;
-  font-size: 14px;
+  font-size: 1.15em;
   margin: 16px 0;
+  align-items: center;
 }
 
 a {
@@ -71,6 +77,9 @@ a {
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
+  border-bottom: 1px solid #303030;
+  border-radius: 0;
+  padding: 0;
 }
 .cta-secondary:hover {
   background-color: none;
@@ -79,6 +88,8 @@ a {
 }
 .cta-secondary:hover {
   color: #03989e;
+  border-bottom: 1px solid #03989e;
+  margin: 0;
 }
 
 header {
@@ -156,18 +167,16 @@ header {
   flex-direction: column;
 }
 .profile-section .profile-name {
-  order: 2;
   margin-bottom: 16px;
+  text-align: center;
 }
 .profile-section .profile-image {
-  order: 1;
   text-align: center;
 }
 .profile-section .profile-image img {
   width: 80%;
 }
 .profile-section .profile-cta {
-  order: 3;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -184,6 +193,19 @@ header {
   text-align: center;
 }
 .about .image img {
+  width: 80%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .image {
+  text-align: center;
+}
+.contact-form .image img {
   width: 80%;
 }
 
@@ -419,16 +441,14 @@ header {
     align-items: center;
   }
   .profile-section .profile-name {
-    order: 1;
     flex-direction: column;
   }
   .profile-section .profile-image {
-    order: 2;
     width: 60%;
   }
   .profile-section .profile-cta {
-    order: 3;
     flex-direction: column;
+    gap: 16px;
   }
   .about {
     flex-direction: row;
