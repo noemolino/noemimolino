@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
 
 header {
     background-color: $primary-color;

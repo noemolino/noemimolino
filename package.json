@@ -1,0 +1,24 @@
+{
+  "name": "noemimolino",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio website! This repository contains the source code for my personal portfolio, which showcases my skills, projects, and background.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass assets/scss:assets/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noemolino/noemimolino.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noemolino/noemimolino/issues"
+  },
+  "homepage": "https://github.com/noemolino/noemimolino#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

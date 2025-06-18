@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@use 'variables' as *;
+@use 'mixins' as *;
 
 @media (min-width: 768px) {
   body {

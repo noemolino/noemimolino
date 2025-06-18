@@ -29,7 +29,7 @@ section {
   font-family: "Cormorant+Garamond", serif;
   font-weight: bold;
   font-style: italic;
-  color: #03989e;
+  color: #03989E;
   gap: 8px;
   font-size: 1.15em;
   margin: 16px 0;
@@ -56,17 +56,17 @@ a {
 }
 .cta-primary:hover {
   padding: 8px 16px;
-  background-color: #03989e;
+  background-color: #03989E;
   border: 1px solid #fff;
-  color: #03989e;
+  color: #03989E;
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
 }
 .cta-primary:hover:hover {
   background-color: #fff;
-  color: #03989e;
-  border: 1px solid #03989e;
+  color: #03989E;
+  border: 1px solid #03989E;
 }
 
 .cta-secondary {
@@ -87,8 +87,8 @@ a {
   border: 1px solid transparent;
 }
 .cta-secondary:hover {
-  color: #03989e;
-  border-bottom: 1px solid #03989e;
+  color: #03989E;
+  border-bottom: 1px solid #03989E;
   margin: 0;
 }
 
@@ -100,12 +100,12 @@ header {
   position: absolute;
   top: -56px;
   left: 0;
-  background-color: #03989e;
+  background-color: #03989E;
   color: #000;
   padding: 8px;
   text-align: center;
   z-index: 1000;
-  border: 1px solid #03989e;
+  border: 1px solid #03989E;
   border-radius: 8px;
   transition: top 0.3s;
 }
@@ -362,7 +362,7 @@ header {
 }
 .contact .contact-form-section form button {
   padding: 8px 16px;
-  background-color: #03989e;
+  background-color: #03989E;
   border: 1px solid #fff;
   color: #000;
   border-radius: 8px;
@@ -372,8 +372,8 @@ header {
 }
 .contact .contact-form-section form button:hover {
   background-color: #fff;
-  color: #03989e;
-  border: 1px solid #03989e;
+  color: #03989E;
+  border: 1px solid #03989E;
 }
 .contact .contact-form-section form button:hover {
   padding: 8px 16px;
