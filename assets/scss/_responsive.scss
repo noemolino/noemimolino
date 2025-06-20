@@ -26,6 +26,12 @@
   .skills .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
+
+  .popup-links {
+  a {
+    flex-direction: row;
+  }
+}
 }
 
 @media (min-width: 900px) {
