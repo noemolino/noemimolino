@@ -47,7 +47,6 @@
   overflow-y: auto;
   border-radius: 1rem;
   padding: 2rem;
-  // margin: 0 2rem;
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   -webkit-overflow-scrolling: touch;
@@ -69,12 +68,15 @@
 
   a {
     flex: 1;
-    text-align: center;
     background: $color-accent;
     color: #fff;
     padding: 0.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-evenly;
   }
 }
 

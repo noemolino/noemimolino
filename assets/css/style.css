@@ -215,12 +215,15 @@ body.dark .timeline-entry p {
 }
 .popup-links a {
   flex: 1;
-  text-align: center;
   background: #0077cc;
   color: #fff;
   padding: 0.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-evenly;
 }
 
 .btn-close-popup {
