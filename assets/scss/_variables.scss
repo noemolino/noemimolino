@@ -1,14 +1,18 @@
-$primary-color: #303030;
-$secondary-color: #03989E;
-$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-$white: #fff;
-$base-font: 'Poppins', sans-serif;
-$subtitle-font: 'Cormorant+Garamond', serif;
-$base-spacing: 8px;
-$font-size-base: 16px;
-$font-size-small: 14px;
-$font-size-title: 1.3em;
-$font-size-subtitle: 1.15em;
-$font-size-description: 1em;
-$font-size-footer: 12px;
-$font-size-card-period: 0.9em;
+// Colors
+$font-family: 'Segoe UI', sans-serif;
+$color-text: #222;
+$color-bg: #f7f7f7;
+$color-accent: #0077cc;
+$color-muted: #666;
+$color-surface: #fafafa;
+$color-border: #ddd;
+$color-heading: #333;
+$color-footer-bg: #333;
+$color-footer-link: #66ccff;
+
+// Dark Mode Colors
+$dark-bg: #1e1e1e;
+$dark-text: #fff;
+$dark-surface: #2a2a2a;
+$dark-border: #444;
+$dark-muted: #f0f0f0;

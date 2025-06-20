@@ -1,62 +1,173 @@
-@use 'variables' as *;
-@use 'mixins' as *;
+@use "variables" as *;
+@use "mixins" as *;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-h1, h2 {
-    font-family: $subtitle-font;
-    font-weight: bold;
-    font-style: italic;
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  color: $color-text;
+  background-color: $color-bg;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 0.5rem;
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #ccc;
   }
 
-body {
-    font-family: $base-font;
-    color: $primary-color;
-    background-color: #fff;
-    font-size: $font-size-base;
-    padding: 2 * $base-spacing;
+  h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    color: $color-muted;
+    margin: 0;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  a {
+    color: $color-accent;
+    text-decoration: none;
+    font-weight: bold;
+    @include hover-link;
+  }
 }
 
 section {
-    padding: 2 * $base-spacing 0;
+  padding: 0.5rem 1rem;
+  max-width: 100%;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $color-border;
+    padding-bottom: 0.5rem;
+  }
 }
 
-.subtitle {
-    @include flex-center(row, flex-start);
-    font-family: $subtitle-font;
-    font-weight: bold;
-    font-style: italic;
-    color: $secondary-color;
-    gap: $base-spacing;
-    font-size: $font-size-subtitle;
-    margin: 2 * $base-spacing 0;
-    align-items: center;
+.about p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-a {
-    color: $primary-color;
-}
+/* === Toggle Styles === */
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
 
-.cta-primary {
-    @include button-styles($white, $primary-color, $primary-color);
-    &:hover {
-        @include button-styles($secondary-color, $white, $secondary-color);
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
     }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 24px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        left: 4px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+    }
+
+    input:checked + .slider {
+      background-color: #2a2a2a;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+  }
 }
 
-.cta-secondary {
-    @include button-styles(transparent, none, $primary-color, $base-spacing 0);
-    border-bottom: 1px solid $primary-color;
-    border-radius: 0;
-    padding: 0;
+/* === Dark Mode General === */
+body.dark {
+  @include dark-mode;
 
-    &:hover {
-        color: $secondary-color;
-        border-bottom: 1px solid $secondary-color;
-        margin: 0;
-    }
+  a {
+    color: $dark-text;
+  }
+
+  header {
+    color: #e0e0e0;
+  }
+
+  .experience,
+  .education,
+  footer,
+  .about,
+  .projects,
+  .project-popup,
+  .skills {
+    background-color: $dark-bg;
+    color: $dark-muted;
+  }
+
+  .skills-grid > div,
+  .project-card {
+    background-color: $dark-surface;
+    border: 1px solid $dark-border;
+    color: $dark-muted;
+  }
+
+  h2,
+  h3 {
+    color: #e0e0e0;
+  }
+
+  .btn-close-popup {
+    color: $dark-muted;
+  }
+
+  .timeline-entry p {
+    color: $dark-muted;
+  }
 }

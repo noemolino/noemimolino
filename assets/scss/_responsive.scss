@@ -1,136 +1,68 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-@media (min-width: 768px) {
-  body {
-    padding: 4 * $base-spacing 13 * $base-spacing;
-  }
+@media (min-width: 600px) {
+  header {
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
 
-  .container {
-    @include flex-center(row, space-around);
-    align-items: center;
-  }
+    h1 {
+      font-size: 1.75rem;
+    }
 
-  .nav-links {
-    @include flex-center(row, space-around);
-    position: static;
-    width: auto;
-    text-align: left;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0;
-
-    li {
-      margin-left: 2 * $base-spacing;
-      margin-top: 0;
+    p {
+      font-size: 1.05rem;
     }
   }
 
-  .hamburger {
-    display: none;
+  section {
+    padding: 0 4rem 2rem;
+    width: 80vw;
+    max-width: 1200px;
   }
 
-  .profile-section {
-    @include flex-center(row, space-around);
-    text-align: left;
-
-    .profile-name,
-    .profile-image,
-    .profile-cta {
-      flex: 1;
-      margin-bottom: 0;
-      @include flex-center(center, center);
-      align-items: center;
-    }
-
-    .profile-name {
-      flex-direction: column;
-    }
-
-    .profile-image {
-      width: 60%;
-    }
-
-    .profile-cta {
-      flex-direction: column;
-      gap: 2 * $base-spacing;
-    }
-  }
-
-  .about {
-    flex-direction: row;
-
-    .image,
-    .content {
-      flex: 1;
-    }
-  }
-
-  .cards-container {
-    @include flex-center(row, center);
-    align-items: center;
-  }
-
-  .card {
-    width: calc(50% - 2 * $base-spacing);
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  .responsive-section {
-    @include flex-center(row, space-between);
-
-    .column {
-      flex-basis: 48%;
-      margin-bottom: 0;
-
-      .scroll-container {
-        display: block;
-        overflow: visible;
-
-        .card {
-          margin: 2 * $base-spacing 0;
-          flex-direction: column;
-        }
-      }
-    }
-  }
-
-  .contact .column .image {
-    width: 60%;
-    margin: 0 auto;
+  .skills .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 }
 
-@media (min-width: 1000px) {
-  .about {
-    .image {
-      img {
-        width: 60%;
-      }
+@media (min-width: 900px) {
+  header {
+    padding: 3rem 1rem 2rem;
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: $color-muted;
+      margin-top: -0.5rem;
     }
   }
 
-  .card {
-    width: calc(33% - 2 * $base-spacing);
+  section {
+    width: 75vw;
+    max-width: 1200px;
   }
 
-  .contact {
-    @include flex-center(row, space-between);
-    align-items: center;
-    gap: 2 * $base-spacing;
+  .projects-grid {
+    flex-direction: row;
+    justify-content: space-between;
 
-    .column{
-      flex: 1;
+    .project-card {
+      width: 48%;
     }
+  }
 
-    .column .image {
-      width: 100%;
-    }
-    .contact-form-section {
-      margin: 2 * $base-spacing auto;
-    }
+  .skills .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

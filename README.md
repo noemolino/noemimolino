@@ -1,41 +1,107 @@
-# Noemi Molino Portfolio
+# 🎨 Noemi Molino - Frontend Developer Portfolio
 
-Welcome to my portfolio website! This repository contains the source code for my personal portfolio, which showcases my skills, projects, and background.
+Welcome to my portfolio!  
+This project showcases my work and journey as a **Junior Front-End Developer**, focusing on accessibility, simplicity, and responsive design.
 
-## Overview
+---
 
-The portfolio consists of two main pages:
+## 🚀 Live Demo
 
-1. **index.html**:
-   - **About Me**: An introduction and background information.
-   - **Portfolio**: A selection of my projects.
-   - **Skills**: A list of technologies and tools I am proficient in.
-   - **Background**: My professional and educational experience.
-   - **Contact Form**: A simple form for reaching out.
+🌐 [Live Portfolio](https://noemolino.netlify.app/)  
+📄 [Download Resume (PDF)](assets/documents/Molino_CV.pdf)
 
-2. **contact.html**:
-   - **Extended Contact Form**: A more detailed form for inquiries.
+---
 
-## Technologies Used
+## 📁 Project Structure
 
-- **HTML**: Structure of the web pages.
-- **SCSS**: Styling of the pages with advanced CSS features.
-- **JavaScript**: For dynamic functionality and interactivity.
-- **EmailJS**: To handle form submissions and send emails.
-- **GitHub Pages**: Hosting the website.
+├── index.html # Main portfolio page
+├── assets/
+│ ├── css/
+│ │ └── style.css # Main styles for the site
+│ ├── images/ # Profile picture, icons, and favicon
+│ ├── videos/ # Project demo videos
+│ ├── documents/
+│ │ └── Molino_CV.pdf # Downloadable resume
+│ └── main.js # JavaScript functionality
 
-## Live Site
+---
 
-You can view the live portfolio here: [https://noemolino.github.io/noemimolino/](https://noemolino.github.io/noemimolino/)
+## ✨ Features
 
-## Repository
+- 🌗 Persistent **Dark Mode** with `localStorage`
+- 🎥 Dynamic project popups with demo videos
+- 🧭 Simple navigation and clear sections: About, Skills, Projects Experience, Education, Contact
+- 📱 **Responsive Design** for all devices
+- ⚙️ No frameworks, only **HTML, CSS, and Vanilla JS**
 
-The source code for this portfolio is available on GitHub: [https://github.com/noemolino/noemimolino](https://github.com/noemolino/noemimolino)
+---
 
-## Getting Started
+## 🛠️ Technologies Used
 
-To get started with this project locally:
+### Languages
+- HTML5
+- CSS3 / Sass
+- JavaScript (ES6+)
+- TypeScript
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/noemolino/noemimolino.git
+### Libraries & Tools
+- Axios
+- Lodash
+- Webpack
+- Git & GitHub
+
+### CMS and Platforms
+- Contentstack
+- Adobe Experience Manager (AEM)
+- WordPress
+- Pimcore
+- Salesforce
+- Pardot
+
+### UX/UI & Other Tools
+- Figma
+- Google Analytics / Tag Manager
+- Jira, Trello
+
+---
+
+## 🧪 Included Projects
+
+### 📌 JS Counter
+A simple, accessible counter built with HTML, CSS, and vanilla JavaScript.  
+🔗 [Live Demo](https://counter-noemimolino.netlify.app/) | 💻 [Source Code](https://github.com/noemolino/counter)
+
+### 📚 Owly - API Project
+A lightweight app fetching book data from a public API and displaying by genre.  
+🔗 [Live Demo](https://owly-noemimolino.netlify.app/) | 💻 [Source Code](https://github.com/noemolino/owly)
+
+---
+
+## 👩‍💻 About Me
+
+**Noemi Molino**  
+Frontend Developer with a background in digital marketing.  
+🔗 [LinkedIn](https://www.linkedin.com/in/noemi-molino-8807191b5/)  
+💌 [Email](mailto:noemimolino99@gmail.com)  
+🐙 [GitHub](https://github.com/noemolino)
+
+---
+
+## 💻 Getting Started
+To run this project locally, follow these steps:
+
+bash
+[Clone the repository]
+git clone https://github.com/noemolino/portfolio.git
+Note: No build step is required. Just open the index.html file in your browser to view the portfolio.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+Feel free to use it as a base for your personal or professional projects, but please keep original credits intact.
+
+---
+
+🧠 _"Code is design made functional."_  

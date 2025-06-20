@@ -1,377 +1,286 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Noemi Molino">
-<meta name="robots" content="index, follow">
-
-    <!-- favicon -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <!-- google font -->
-    <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-  rel="stylesheet"
-/>
-
-    <!-- style -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noemi Molino | Frontend Developer</title>
-<meta name="description" content="Discover the portfolio of Noemi Molino, a frontend developer specializing in web development, user interfaces (UI), and responsive web design. Explore her projects and contact her for collaborations.">
-<meta name="keywords" content="Noemi Molino, frontend developer, portfolio, web development, UI, web design, HTML, CSS, JavaScript">
-<meta property="og:title" content="Noemi Molino | Frontend Developer">
-<meta property="og:description" content="Visit Noemi Molino's portfolio to discover unique frontend development projects, UI design, and responsive web design. Collaborate with a developer for your next web project.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://noemolino.github.io/noemimolino/">
-<meta property="og:image" content="https://noemolino.github.io/noemimolino/assets/images/avatar_hello.png"> 
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Noemi Molino | Frontend Developer">
-<meta name="twitter:description" content="Discover Noemi Molino's projects, a frontend developer with experience in web development, UI design, and responsive web design.">
-<meta name="twitter:image" content="https://noemolino.github.io/noemimolino/assets/images/avatar_hello.png"> 
-
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon.ico"
+      sizes="32x32"
+    />
+    <script src="assets/main.js" defer></script>
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#nav" class="skip-link">Skip to navigation</a>
-    <a href="#footer" class="skip-link">Skip to footer</a>
-
-    <header id="nav">
-      <div class="container">
-        <div class="logo">
-          <a href="#home">
-            <img src="assets/images/logo.png" alt="Noemi Molino Logo" class="logo" width="40" height="40" />
-          </a>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="hamburger" aria-label="Toggle navigation menu" onclick="toggleMenu(this)">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </nav>
+    <header>
+      <div class="theme-toggle">
+        <span>🌞</span>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider"></span>
+        </label>
+        <span>🌙</span>
       </div>
+
+      <img
+        src="assets/images/Noemi_Molino.jpg"
+        alt="Noemi Molino profile"
+        class="profile-pic"
+      />
+      <h1>Hi, I'm Noemi Molino</h1>
+
+      <h2>Junior Front-End Developer</h2>
+      <p>I build simple, accessible and responsive web interfaces.</p>
+      <p>
+        Passionate about design and code, I'm specializing as a Frontend
+        Developer.
+      </p>
+      <p>
+        <a href="#contact">Contact Me</a> |
+        <a href="assets/documents/Molino_CV.pdf" download>Download CV</a>
+      </p>
     </header>
-    
-    <main id="main-content">
-      <section class="profile-section" id="home">
-        <div class="profile-name">
-          <div class="subtitle">
-            <img
-              src="assets/images/hello.png"
-              alt="hand"
-              class="logo"
-              width="20"
-              height="20"
-            />
-            <p>Hello</p>
-          </div>
-          <h1>I'm Noemi Molino</h1>
-          <p>Frontend developer</p>
-        </div>
-        <div class="profile-image">
-          <img src="assets/images/avatar_hello.png" alt="avatar hello" />
-        </div>
-        <div class="profile-cta">
-          <a
-            href="assets/documents/Molino_CV.pdf"
-            class="cta-secondary"
-            download="Noemi Molino CV"
-            >Download CV</a
-          >
-          <a href="contact.html" class="cta-primary">Contact</a>
-        </div>
-      </section>
 
-      <section class="about" id="about">
-        <div class="image">
-          <img src="assets/images/Noemi.png" alt="Noemi Molino" />
-        </div>
-        <div class="content">
-          <div class="subtitle">
-            <img
-              src="assets/images/smile.png"
-              alt="smile"
-              class="logo"
-              width="20"
-              height="20"
-            />
-            <p>About me</p>
-          </div>
-          <h2>Who I am</h2>
-          <div>
-            <p>
-              Hey! I'm Noemi, a passionate and enthusiastic digital marketer. I
-              completed the "Fullstack 4 Digital Marketing" course at
-              <a
-                href="https://www.itstechtalentfactory.it/"
-                target="_blank"
-                aria-label="ITS Tech Talent Factory (opens in a new tab)"
-                >ITS Tech Talent Factory</a
-              >
-              in Milan and currently work in content management. Even though I’m
-              in a different role right now, I'm really excited about the idea
-              of becoming a Frontend Developer because I find it to be such a
-              fun, creative, and innovative field that fits perfectly with my
-              love for technology and design.
-            </p>
-          </div>
-        </div>
-      </section>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a <strong>Front-End Developer</strong> with a strong foundation in
+        <strong>digital marketing</strong>, which allows me to bridge the gap
+        between user-centric design and technical implementation. My hybrid
+        background helps me approach development not only from a code
+        perspective, but also with a strategic mindset focused on communication,
+        engagement, and user behavior.
+      </p>
 
-      <section class="portfolio" id="portfolio">
+      <p>
+        My work is centered around building
+        <strong>modular and scalable UI systems</strong>, writing
+        <strong>clean, semantic, and maintainable code</strong> using
+        <strong>HTML</strong>, <strong>CSS</strong>, and
+        <strong>JavaScript</strong>, and ensuring seamless integration with
+        <strong>content management platforms</strong> such as
+        <strong>Adobe Experience Manager (AEM)</strong> and
+        <strong>Contentstack</strong>. I pay close attention to detail when
+        implementing interfaces that are both visually refined and
+        performance-optimized.
+      </p>
+
+      <p>
+        I thrive in <strong>collaborative environments</strong>, especially in
+        <strong>cross-functional teams</strong>, where I can contribute ideas,
+        share knowledge, and help turn design concepts into interactive,
+        user-friendly products. I enjoy tackling complex problems, improving
+        development workflows, and aligning technical solutions with business
+        goals.
+      </p>
+
+      <p>
+        At the moment, I’m actively focusing on deepening my understanding of
+        <strong>modern JavaScript</strong>, refining my
+        <strong>CSS architecture</strong> skills, and advancing in
+        <strong>web accessibility</strong> to ensure the experiences I build are
+        usable and inclusive for all users. I’m always curious, eager to learn,
+        and committed to delivering high-quality front-end experiences that make
+        a real difference.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
         <div>
-          <div class="subtitle">
-            <img
-              src="assets/images/brush.png"
-              alt="brush"
-              class="logo"
-              width="20"
-              height="20"
-            />
-            <p>Portfolio</p>
-          </div>
-          <h2>Projects</h2>
+          <h3>Languages</h3>
+          <p>JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS/Sass</p>
         </div>
-        <div class="cards-container">
-          <div class="card">
-            <img src="assets/images/anna_gabriele.jpg" alt="Anna Gabriele" />
-            <h3 class="card-title">Wedding booklet</h3>
-            <p class="card-description">
-              To create a personalized wedding booklet, I worked on texts,
-              images, and decorations to match the design with the wedding
-              theme, ensuring that every detail was perfect and that the guests
-              had a special keepsake from the event.
-            </p>
-            <a href="contact.html" class="cta-secondary"
-              >To see the finished booklet, write to me!</a
-            >
-          </div>
-          <div class="card">
-            <img src="assets/images/logo_pedagogista.png" alt="logo flyer" />
-            <h3 class="card-title">Flyer</h3>
-            <p class="card-description">
-              I designed a super eye-catching flyer to promote an activity. I
-              used vibrant colors and a simple, elegant font to make the message
-              clear. I divided the flyer into different sections to help users
-              quickly find the information they need.
-            </p>
-            <a href="contact.html" class="cta-secondary"
-              >To learn about my project, contact me!</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="skills" id="skills">
         <div>
-          <div class="subtitle">
-            <img
-              src="assets/images/it-pc.png"
-              alt="pc"
-              class="logo"
-              width="20"
-              height="20"
-            />
-            <p>Skills</p>
-          </div>
-          <h2>Technologies</h2>
+          <h3>Frameworks & Libraries</h3>
+          <p>Bootstrap, Storybook, Axios, Lodash</p>
         </div>
-        <div class="skills-grid">
-          <img src="assets/images/wordpress.png" alt="wordpress" />
-          <img src="assets/images/contentstack.png" alt="contentstack" />
-          <img src="assets/images/jira.png" alt="jira" />
-          <img src="assets/images/trello.png" alt="trello" />
-          <img src="assets/images/storybook.png" alt="storybook" />
-          <img src="assets/images/html-5.png" alt="html5" />
-          <img src="assets/images/css-3.png" alt="css3" />
-          <img src="assets/images/sass.png" alt="sass" />
-          <img src="assets/images/javascript.png" alt="JS" />
-          <img src="assets/images/github.png" alt="github" />
-          <img src="assets/images/figma.png" alt="figma" />
-          <img src="assets/images/canva.png" alt="canva" />
-          <img src="assets/images/photoshop.png" alt="photoshop" />
-          <img src="assets/images/illustrator.png" alt="illustrator" />
-          <img src="assets/images/indesign.png" alt="indesign" />
+        <div>
+          <h3>Build Tools</h3>
+          <p>Webpack, npm, Yarn</p>
         </div>
-      </section>
+        <div>
+          <h3>Version Control</h3>
+          <p>Git (GitHub, Bitbucket)</p>
+        </div>
+        <div>
+          <h3>Analytics</h3>
+          <p>Google Analytics, Google Tag Manager</p>
+        </div>
+        <div>
+          <h3>CMS</h3>
+          <p>Contentstack, AEM, WordPress, Pimcore, Salesforce, Pardot</p>
+        </div>
+        <div>
+          <h3>Workflow & Tools</h3>
+          <p>Figma, Jira, Trello</p>
+        </div>
+      </div>
+    </section>
 
-      <section class="career" id="career">
-        <div class="column">
-          <div class="subtitle">
-            <img
-              src="assets/images/suitcase.png"
-              alt="suitcase"
-              class="logo"
-              width="20"
-              height="20"
-            />
-            <p>Career</p>
-          </div>
-          <h2>Background</h2>
-        </div>
-        <div class="responsive-section">
-          <div class="column">
-            <div class="section-title">
-              <h3>Work experience</h3>
-            </div>
-            <div class="scroll-container">
-              <div class="card">
-                <h4 class="card-title">Junior Interactive Developer</h4>
-                <p class="card-place">Publicis Sapient, Milan - Italy</p>
-                <p class="card-description">
-                  During my career, I've worked on creating design systems,
-                  designing and updating landing pages, managing content, and
-                  handling customer relations (both locally and
-                  internationally). I've also taken on leadership roles, like
-                  mentoring new hires.
-                </p>
-                <span class="card-period">2023 - present</span>
-              </div>
-              <div class="card">
-                <h4 class="card-title">Web content intern</h4>
-                <p class="card-place">Randstad Italia, Milan - Italy</p>
-                <p class="card-description">
-                  During my internship, I uploaded videos to YouTube, designed
-                  and updated landing pages, edited blog articles, and conducted
-                  SEO analysis.
-                </p>
-                <span class="card-period">2022</span>
-              </div>
-              <div class="card">
-                <h4 class="card-title">Service centre employee</h4>
-                <p class="card-place">
-                  MediaMarket S.p.A , Verano Brianza - Italy
-                </p>
-                <p class="card-description">
-                  In my job, I managed customer relations, addressed their
-                  needs, and resolved issues. I handled payment installments,
-                  worked as a cashier, managed transactions, and ensured
-                  accurate cash operations. I also recorded initial accounting
-                  entries and performed daily store closing operations, keeping
-                  everything organized and accurate.
-                </p>
-                <span class="card-period">2020 - 2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="section-title">
-              <h3>Education</h3>
-            </div>
-            <div class="scroll-container">
-              <div class="card">
-                <h4 class="card-title">Master in “Front end Development”</h4>
-                <p class="card-place">Start2impact - Italy</p>
-                <p class="card-description">
-                  The Frontend Developer Master trains you to create and
-                  optimize user interfaces for websites and apps. You'll learn
-                  to use HTML, CSS, and JavaScript, along with modern frameworks
-                  like React or Angular, to build dynamic and responsive web
-                  pages.
-                </p>
-                <span class="card-period">2024 - in progress</span>
-              </div>
-              <div class="card">
-                <h4 class="card-title">
-                  Degree in “fullstack 4 digital marketing”
-                </h4>
-                <p class="card-place">ITS Tech Talent Factory, Milan - Italy</p>
-                <p class="card-description">
-                  The course teaches you to create and manage online marketing
-                  strategies, use digital tools to promote products and
-                  services, analyze data to understand campaign results, and
-                  improve the visibility and effectiveness of marketing actions.
-                </p>
-                <span class="card-period">2021 - 2023</span>
-              </div>
-              <div class="card">
-                <h4 class="card-title">
-                  Degree in “finance and marketing administration”
-                </h4>
-                <p class="card-place">
-                  IISS Iris Versari, Cesano Maderno - Italy
-                </p>
-                <p class="card-description">
-                  The course teaches you how to manage a business, covering
-                  everything from bureaucratic processes to personnel and
-                  resource management. You'll learn about company finances,
-                  including balance sheets, investments, and accounting. Plus,
-                  it prepares you to sell products or services, understand
-                  customer needs, and promote a business.
-                </p>
-                <span class="card-period">2013 - 2018</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="column">
-          <div class="subtitle">
-            <img
-              src="assets/images/contact.png"
-              alt="phone and email"
-              class="logo"
-              width="20"
-              height="20"
-            />
-            <p>Contact</p>
-          </div>
-          <h2>Get in touch</h2>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>JS Counter</h3>
           <p>
-            If you want to learn more about me or see the work I've done, don't
-            hesitate to fill out the form below or contact me through social
-            media.
+            A simple and accessible counter app built with
+            <strong>HTML</strong>, <strong>CSS</strong>, and
+            <strong>vanilla JavaScript</strong>. Users can increment, decrement,
+            or reset the counter. It showcases essential front-end skills like
+            DOM manipulation and clean, maintainable code—without using
+            frameworks or libraries.
           </p>
+          <p><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+          <button class="btn-show-popup" data-project="counter">
+            Scopri di più
+          </button>
         </div>
-        <div class="column">
-          <div class="contact-form-section">
-            <form id="contact-form">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required="" />
 
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
+        <div class="project-card">
+          <h3>Owly - API Project</h3>
+          <p>
+            A lightweight web app that fetches book data from a
+            <strong>public API</strong> and displays it by genre. Built with
+            <strong>vanilla JavaScript</strong>, <strong>Axios</strong>,
+            <strong>Lodash</strong>, and bundled with <strong>Webpack</strong>,
+            it focuses on usability, dynamic content rendering, and a clean,
+            responsive UI.
+          </p>
+          <p>
+            <strong>Tech stack:</strong> HTML, CSS, JavaScript, Axios, Lodash,
+            Webpack
+          </p>
+          <button class="btn-show-popup" data-project="api">
+            Scopri di più
+          </button>
+        </div>
+      </div>
+    </section>
 
-              <button type="submit">Send</button>
-            </form>
-            <p id="response-message"></p>
+    <section class="experience">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <h3>Junior Interactive Developer</h3>
+            <a href="https://www.publicissapient.com/" target="_blank"
+              >Publicis Sapient</a
+            >
           </div>
+          <span class="entry-date">2023 - Ongoing</span>
         </div>
-      </section>
-    </main>
+        <p>
+          I design and maintain landing pages using <strong>HTML5</strong>,
+          <strong>CSS3</strong>, <strong>SASS</strong>, and
+          <strong>Vanilla JavaScript</strong>, across platforms like
+          <strong>Salesforce</strong>, <strong>AEM</strong>, and
+          <strong>Pimcore</strong>. I also work on
+          <strong>design systems</strong>, manage
+          <strong>ContentStack</strong> content, and support
+          <strong>international clients</strong> in aligning technical builds
+          with marketing goals.
+        </p>
+      </div>
 
-    <footer class="footer" id="footer">
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/noemi-molino-8807191b5/" target="_blank" class="social-icon" aria-label="Noemi Molino LinkedIn profile (opens in a new tab)">
-          <img src="assets/images/linkedin.png" alt="LinkedIn" />
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <h3>Web Content Intern</h3>
+            <a href="https://www.randstad.it/" target="_blank">Randstad</a>
+          </div>
+          <span class="entry-date">2022</span>
+        </div>
+        <p>
+          Created and maintained landing pages, managed
+          <strong>YouTube video content</strong>, proofread blog posts, and ran
+          <strong>SEO analysis</strong> to optimize visibility and consistency
+          with the brand's tone of voice.
+        </p>
+      </div>
+    </section>
+    <section class="education">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <h3>Master’s in Front-end Development</h3>
+            <a href="https://www.start2impact.it/" target="_blank"
+              >Start2Impact University</a
+            >
+          </div>
+          <span class="entry-date">2024 - Ongoing</span>
+        </div>
+        <p>
+          A program focused on building advanced frontend skills using
+          <strong>HTML</strong>, <strong>CSS</strong>,
+          <strong>JavaScript</strong>, <strong>TypeScript</strong>, and modern
+          libraries like <strong>React</strong>, <strong>Angular</strong>, and
+          <strong>Vue.js</strong>. Includes version control with
+          <strong>Git</strong> and integration of <strong>APIs</strong>.
+        </p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <h3>Fullstack 4 Digital Marketing</h3>
+            <a href="https://itstechtalentfactory.it/" target="_blank"
+              >ITS Tech Talent Factory - Milan</a
+            >
+          </div>
+          <span class="entry-date">2022 - 2023</span>
+        </div>
+        <p>
+          Comprehensive training in <strong>digital marketing</strong>,
+          <strong>UI/UX</strong>, <strong>Google tools</strong>,
+          <strong>Figma</strong>, and <strong>paid media platforms</strong>.
+          Gained practical experience in campaign design, performance analysis,
+          and user-centered design.
+        </p>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>Contact</h2>
+      <div>
+        <a href="mailto:noemimolino99@gmail.com" aria-label="Email">
+          <img src="assets/images/mail.svg" alt="Email" />
         </a>
-        <a href="https://github.com/noemolino" target="_blank" class="social-icon" aria-label="Noemi Molino GitHub profile (opens in a new tab)">
-          <img src="assets/images/github.png" alt="GitHub" />
+        <a
+          href="https://www.linkedin.com/in/noemi-molino-8807191b5/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img src="assets/images/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://github.com/noemolino"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <img src="assets/images/github.svg" alt="GitHub" />
         </a>
       </div>
-      <div class="copyright">Copyright &copy; Noemi Molino - 2024</div>
+       <p>© 2025 Noemi Molino. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="assets/main.js"></script>
+    <div class="project-popup-overlay" id="popupOverlay">
+      <div class="project-popup" id="projectPopup">
+        <button class="btn-close-popup" id="closePopup">×</button>
+        <h3 id="popupTitle">Project Title</h3>
+        <p id="popupDescription">Detailed description goes here...</p>
+        <video controls id="popupVideo" src="" poster=""></video>
+        <div class="popup-links">
+          <a href="#" target="_blank" id="popupLive">🌐 Live Project</a>
+          <a href="#" target="_blank" id="popupGit">💻 View Code</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
